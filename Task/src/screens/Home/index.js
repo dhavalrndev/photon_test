@@ -45,7 +45,11 @@ const Index = (navigation, route, props) => {
             {
                 VisibleLoader == false  && Data?.length>0 &&
                 <FlatList
-                     style={{flex:1,backgroundColor:"green"}}
+                initialNumToRender={30}
+                maxToRenderPerBatch={50}
+                showsHorizontalScrollIndicator={false}
+                showsVerticalScrollIndicator={false}
+                     style={{flex:1,backgroundColor:"white"}}
                     keyExtractor={( item, index ) => {
                         return index.toString();
                     }}
