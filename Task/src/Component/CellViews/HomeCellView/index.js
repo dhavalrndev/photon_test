@@ -13,9 +13,13 @@ const Index = (props) => {
     console.log(" props ", props?.item);
     return (
         <View style={styles.mainView}>
+            <Pressable style={{flex:1}} onPress={()=>{
+                props?.onClick();
+            }}>
             <Text style={styles.TextSchollNameStyle}>
                 {Name}
             </Text>
+            </Pressable>
         </View>
     )
 }

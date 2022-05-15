@@ -57,6 +57,9 @@ const Index = (navigation, route, props) => {
                     renderItem={({item, index}) => {
                      return (
                         <HomeCellView 
+                        onClick={()=>{
+                            
+                        }}
                         item={item}>
                         </HomeCellView>
                      )
